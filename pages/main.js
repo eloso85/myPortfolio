@@ -1,16 +1,22 @@
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
+import Navi from '../src/components/Navi'
+
+import img from '../src/images/sky.jpeg'
 
 
 
 export default function Main(){
-    return (
-        <CardDeck>
+
+    return (<>
+
+        <Navi/>
+        
+        <CardDeck >
+          
         <Card>
-          <Card.Img variant="top" src="holder.js/100px160" />
+          <Card.Img variant="top" src="" />
           <Card.Body>
             <Card.Title>Card title</Card.Title>
             <Card.Text>
@@ -24,11 +30,23 @@ export default function Main(){
         </Card>
        
 
-        <Card>
-          <Card.Img variant="top" src="holder.js/100px160" />
-          <Card.Body>
+        <Card style={{backgroundImage:"../src/images/sky.jpeg"}}>
+          <Card.Img variant="top" src="" />
+          <Card.Body >
             <Card.Title>Card title</Card.Title>
             <Card.Text>
+              This is a wider card with supporting text below as a natural lead-in to
+              additional content. This card has even longer content than the first to
+              show that equal height action.
+              This is a wider card with supporting text below as a natural lead-in to
+              additional content. This card has even longer content than the first to
+              show that equal height action.
+              This is a wider card with supporting text below as a natural lead-in to
+              additional content. This card has even longer content than the first to
+              show that equal height action.
+              This is a wider card with supporting text below as a natural lead-in to
+              additional content. This card has even longer content than the first to
+              show that equal height action.
               This is a wider card with supporting text below as a natural lead-in to
               additional content. This card has even longer content than the first to
               show that equal height action.
@@ -39,6 +57,13 @@ export default function Main(){
           </Card.Footer>
         </Card>
       </CardDeck>
+      
+        <style jsx>{`
+        .text-muted{
+          background-color:blue;
+        }
         
-    )
+        
+        `}</style>
+   </> )
 }
