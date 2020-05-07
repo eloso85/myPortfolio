@@ -3,8 +3,8 @@ import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 import Navi from '../src/components/Navi'
 
-import img from '../src/images/sky.jpeg'
-
+import img from '../src/images/insta_me.jpg'
+import backImg from '../src/images/sky.jpeg'
 
 
 export default function Main(){
@@ -12,55 +12,24 @@ export default function Main(){
     return (<>
 
         <Navi/>
+        <div className="cardMe">
+        <Card className="bg-dark text-white" style={{width:"50%"}}>
+  <Card.Img src={backImg} alt="Card image" />
+  <Card.ImgOverlay>
+    <Card.Title style={{paddingTop:"120px"}}>Card title</Card.Title>
+    <Card.Text>
+      This is a wider card with supporting text below as a natural lead-in to
+      additional content. This content is a little bit longer.
+    </Card.Text>
+    <Card.Text>Last updated 3 mins ago</Card.Text>
+  </Card.ImgOverlay>
+</Card>
+      </div>
+        <style jsx global>{`
         
-        <CardDeck >
-          
-        <Card>
-          <Card.Img variant="top" src="" />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural lead-in to
-              additional content. This content is a little bit longer.
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
-        </Card>
-       
-
-        <Card style={{backgroundImage:"../src/images/sky.jpeg"}}>
-          <Card.Img variant="top" src="" />
-          <Card.Body >
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural lead-in to
-              additional content. This card has even longer content than the first to
-              show that equal height action.
-              This is a wider card with supporting text below as a natural lead-in to
-              additional content. This card has even longer content than the first to
-              show that equal height action.
-              This is a wider card with supporting text below as a natural lead-in to
-              additional content. This card has even longer content than the first to
-              show that equal height action.
-              This is a wider card with supporting text below as a natural lead-in to
-              additional content. This card has even longer content than the first to
-              show that equal height action.
-              This is a wider card with supporting text below as a natural lead-in to
-              additional content. This card has even longer content than the first to
-              show that equal height action.
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
-        </Card>
-      </CardDeck>
-      
-        <style jsx>{`
-        .text-muted{
-          background-color:blue;
+        .cardMe{
+         padding-left:50px;
+         
         }
         
         
