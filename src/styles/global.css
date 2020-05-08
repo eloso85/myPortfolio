@@ -1,7 +1,9 @@
 
 
 body {
-  background-image: url('../images/skytunnel.jpeg');
+
+  
+  background-image: url('../images/astro.jpg');
   background-attachment: fixed;
   background-size: cover;
   padding: 0;
@@ -13,8 +15,11 @@ body {
   
 }
 
+
+
 .container{
-      padding-top: 20%;  
+      padding-top: 15%;  
+      text-align: center;
 }
 
 .jumbo{

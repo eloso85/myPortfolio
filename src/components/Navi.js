@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav'
 
 export default function Navi(){
     return (
-        <div>
+        <div className="bar">
       
   <Navbar bg="light">
     
@@ -33,17 +33,13 @@ export default function Navi(){
       </Nav.Link>
     </Nav>
 
+</Navbar>
+  
 
-
-
-   
-
-
-
-
-  </Navbar>
-  <br />
+ 
  
   </div>
+   
+   
     )
 }

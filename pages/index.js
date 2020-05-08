@@ -7,8 +7,12 @@ import ResumeData from '../src/resumeData'
 
 export default function Home() {
   return (
+    
+  
     <div className="container">
-      <Jumbotron className='jumbo'>
+     
+      
+     
         <h1>{ResumeData.name}</h1>
         <p>
           This is a simple hero unit, a simple jumbotron-style component for calling
@@ -48,7 +52,7 @@ export default function Home() {
 
 
         </ul>
-      </Jumbotron>
+      
 
 
       <style jsx>{`
