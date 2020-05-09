@@ -1,8 +1,14 @@
 
 import Link from 'next/link'
-import Jumbotron from 'react-bootstrap/Jumbotron'
+
+//image
+
+import astro from '../src/images/astro.jpg'
+
+//bootstrap
 import Button from 'react-bootstrap/Button'
 
+//resumedata
 import ResumeData from '../src/resumeData'
 
 export default function Home() {
@@ -11,9 +17,7 @@ export default function Home() {
   
     <div className="container">
      
-      
-     
-        <h1>{ResumeData.name}</h1>
+      <h1>{ResumeData.name}</h1>
         <p>
           This is a simple hero unit, a simple jumbotron-style component for calling
           extra attention to featured content or information.
@@ -55,18 +59,32 @@ export default function Home() {
       
 
 
-      <style jsx>{`
+      <style jsx global>{`
+
+body{
+  background-image: url(${astro});
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+
+
+
   .socialLink{
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0px;
     overflow: hidden;
     }
 
     .socialLink li{
       display:inline;
       }
-      .container {
+      
+        .container{
+          color:white;
+          text-align: center;
+          padding-top:20%;
     
         -webkit-animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                 animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
