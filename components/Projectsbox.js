@@ -1,4 +1,5 @@
 import rescipe from '../src/images/recipe.jpg'
+import bulb from '../src/images/bulb.jpg'
 
 import Container from 'react-bootstrap/Container'
 import Card from 'react-bootstrap/Card'
@@ -11,8 +12,8 @@ import Image from 'react-bootstrap/Image'
 export default function Projectsbox() {
 
     return (<>
-        <div className="container1">
-            <Container>
+        <div>
+            <Container className="container1">
                 <Row>
                     <Col>
 
@@ -21,7 +22,7 @@ export default function Projectsbox() {
                                 <Jumbotron fluid className='jumbo' style={{ textAlign: 'center' }}>
                                     
                                     
-                                        <h1>Projects</h1>
+                                        <h1 style={{fontWeight:'bold'}}>Projects</h1>
                                         <p>
                                             This is a modified jumbotron that occupies the entire horizontal space of
                                             its parent.
@@ -81,15 +82,19 @@ export default function Projectsbox() {
     
     .container1{
         
-        //background-color:white;
+        background-color:white;
           color:black;
-          //border:solid;
+          border:solid;
           padding:1%;
     }
     
     .jumbo{
-        background-image:url(${rescipe});
+        color:white;
+        background-image:url(${bulb});
         background-size:cover;
+        background-position:center;
+        height:300px;
+        
     }
     
     
