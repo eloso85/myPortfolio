@@ -12,16 +12,25 @@ import email1 from '../src/images/email2.jpg'
 
 export default function ContactForm() {
 
-    const [status, setStatus] = useState({
-        submitted: false,
-        submitting: false,
-        info: { error: false, msg: null }
-      })
-    
-      const [inputs, setInputs] = useState({
-        email: '',
-        message: ''
-      })
+//hello
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
+    const [disabled, setDisabled] = useState(false)
+    const [emailSent, setEmailSent] = useState(null)
+
+    const handleSubmit =(evt)=>{
+        evt.preventDefault();
+
+       
+
+        // setDisabled({
+        //     disabled:true
+        //     });
+
+        // setEmailSent({
+        //     emailSent:false,
+
     
       const handleResponse = (status, msg) => {
         if (status === 200) {
