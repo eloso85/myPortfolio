@@ -11,8 +11,12 @@ import Button from 'react-bootstrap/Button'
 import email1 from '../src/images/email2.jpg'
 
 export default function ContactForm() {
+<<<<<<< HEAD
 
 //hello
+=======
+//hello/yuo/hello
+>>>>>>> f09b37f60727a9c31155f39fbee312e865bf0bc6
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
