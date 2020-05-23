@@ -39,7 +39,7 @@ export default function ContactForm() {
         name,
         email,
         message,
-        sent
+        sent:new Date()
       })
       .then(()=>{
         setName('')
