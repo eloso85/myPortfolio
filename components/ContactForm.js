@@ -11,12 +11,7 @@ import Button from 'react-bootstrap/Button'
 import email1 from '../src/images/email2.jpg'
 
 export default function ContactForm() {
-<<<<<<< HEAD
-
-//hello
-=======
 //hello/yuo/hello
->>>>>>> f09b37f60727a9c31155f39fbee312e865bf0bc6
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
@@ -28,177 +23,107 @@ export default function ContactForm() {
 
        //hello
 
-        // setDisabled({
-        //     disabled:true
-        //     });
+        setDisabled({
+            disabled:true
+            });
 
-        // setEmailSent({
-        //     emailSent:false,
+        setEmailSent({
+            emailSent:false,
 
-    
-      const handleResponse = (status, msg) => {
+        })
+      }
+     
+
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
+    const [disabled, setDisabled] = useState(false)
+    const [emailSent, setEmailSent] = useState(null)
+
+    const handleResponse = (status, msg) => {
         if (status === 200) {
-          setStatus({
-            submitted: true,
-            submitting: false,
-            info: { error: false, msg: msg }
+          setDisabled({
+            disabled: true,
+            
+            
           })
-          setInputs({
-            email: '',
-            message: ''
-          })
+          setEmail({
+            email: ''
+            })
+          setMessage({
+              message:''
+          })  
         } else {
-          setStatus({
+          setEmailSent({
             info: { error: true, msg: msg }
           })
         }
       }
-    
-      const handleOnChange = e => {
-        e.persist()
-        setInputs(prev => ({
-          ...prev,
-          [e.target.id]: e.target.value
-        }))
-        setStatus({
-          submitted: false,
-          submitting: false,
-          info: { error: false, msg: null }
-        })
-      }
-    
-      const handleOnSubmit = async e => {
+
+    const handleSubmit = async e => {
         e.preventDefault()
-        setStatus(prevStatus => ({ ...prevStatus, submitting: true }))
-        const res = await fetch('http://localhost:3000/api/send', {
+        setDisabled(prevStatus => ({ ...prevStatus, disabled: true }))
+        const res = await fetch('/api/send', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
           },
-          body: JSON.stringify(inputs)
+          body: 
+          JSON.stringify({
+              name:"",
+              email:"",
+              message:""
+          })
         })
         const text = await res.text()
         handleResponse(res.status, text)
       }
 
-    // const [name, setName] = useState('')
-    // const [email, setEmail] = useState('')
-    // const [message, setMessage] = useState('')
-    // const [disabled, setDisabled] = useState(false)
-    // const [emailSent, setEmailSent] = useState(null)
-
-    // const handleResponse = (status, msg) => {
-    //     if (status === 200) {
-    //       setDisabled({
-    //         disabled: true,
-            
-            
-    //       })
-    //       setEmail({
-    //         email: ''
-    //         })
-    //       setMessage({
-    //           message:''
-    //       })  
-    //     } else {
-    //       setEmailSent({
-    //         info: { error: true, msg: msg }
-    //       })
-    //     }
-    //   }
-
-    // const handleSubmit = async e => {
-    //     e.preventDefault()
-    //     setDisabled(prevStatus => ({ ...prevStatus, disabled: true }))
-    //     const res = await fetch('/api/send', {
-    //       method: 'POST',
-    //       headers: {
-    //         'Content-Type': 'application/json'
-    //       },
-    //       body: 
-    //       JSON.stringify({
-    //           name:"",
-    //           email:"",
-    //           message:""
-    //       })
-    //     })
-    //     const text = await res.text()
-    //     handleResponse(res.status, text)
-    //   }
-
 
     return (<>
 
-<form onSubmit={handleOnSubmit}>
-        <label htmlFor="email">Email</label>
-        <input
-          id="email"
-          type="email"
-          onChange={handleOnChange}
-          required
-          value={inputs.email}
-        />
-        <label htmlFor="message">Message</label>
-        <textarea
-          id="message"
-          onChange={handleOnChange}
-          required
-          value={inputs.message}
-        />
-        <button type="submit" disabled={status.submitting}>
-          {!status.submitting
-            ? !status.submitted
-              ? 'Submit'
-              : 'Submitted'
-            : 'Submitting...'}
-        </button>
-      </form>
-      {status.info.error && (
-        <div className="error">Error: {status.info.msg}</div>
-      )}
-      {!status.info.error && status.info.msg && (
-        <div className="success">{status.info.msg}</div>)}
-
-        {/* <Container>
-            <Row>
-                <Col>
-                    <Card>
-                        <Card.Header>
-                            <Jumbotron  className='jumbo' style={{ textAlign: 'center' }}>
 
 
-                                <h1 style={{fontWeight:'bold'}}>Contact Me</h1>
+          <Container>
+              <Row>
+                  <Col>
+                      <Card>
+                          <Card.Header>
+                              <Jumbotron  className='jumbo' style={{ textAlign: 'center' }}>
 
 
-                            </Jumbotron>
-                        </Card.Header>
-                        <Card.Body>
-                            <Form onSubmit={handleOnSubmit}>
-                                <Form.Group controlId="exampleForm.ControlInput1">
-                                    <Form.Label>Name</Form.Label>
-                                    <Form.Control type="name" placeholder="John Smith" value=''  onChange='' />
-                                </Form.Group>
+                                  <h1 style={{fontWeight:'bold'}}>Contact Me</h1>
 
-                                <Form.Group controlId="exampleForm.ControlInput1">
-                                    <Form.Label>Email address</Form.Label>
-                                    <Form.Control id="email" type="email" placeholder="name@example.com" required value={inputs.email} onChange={handleOnChange}/>
-                                </Form.Group>
+
+                              </Jumbotron>
+                          </Card.Header>
+                          <Card.Body>
+                              <Form onSubmit={handleOnSubmit}>
+                                  <Form.Group controlId="exampleForm.ControlInput1">
+                                      <Form.Label>Name</Form.Label>
+                                      <Form.Control type="name" placeholder="John Smith" value=''  onChange='' />
+                                  </Form.Group>
+
+                                  <Form.Group controlId="exampleForm.ControlInput1">
+                                      <Form.Label>Email address</Form.Label>
+                                      <Form.Control id="email" type="email" placeholder="name@example.com" required value={inputs.email} onChange={handleOnChange}/>
+                                  </Form.Group>
+                              
+                              <Form.Group controlId="exampleForm.ControlTextarea1">
+                                  <Form.Label>Message</Form.Label>
+                                  <Form.Control as="textarea" rows="3" id="message" required value ={inputs.message} onChange={handleOnChange} />
+                              </Form.Group>
+                              <Button variant="primary" type="submit" disabled= {status.submitting}>
+                                  Send
+                              </Button>
+
                             
-                            <Form.Group controlId="exampleForm.ControlTextarea1">
-                                <Form.Label>Message</Form.Label>
-                                <Form.Control as="textarea" rows="3" id="message" required value ={inputs.message} onChange={handleOnChange} />
-                            </Form.Group>
-                            <Button variant="primary" type="submit" disabled= {status.submitting}>
-                                Send
-                            </Button>
-
-                           
-                        </Form>
-                        </Card.Body>
-                    </Card>
-                </Col>
-            </Row>
-        </Container> */}
+                          </Form>
+                          </Card.Body>
+                      </Card>
+                  </Col>
+              </Row>
+          </Container>
     <style jsx global>{`
     
     .jumbo{
