@@ -70,7 +70,7 @@ export default function ContactForm() {
         <Col>
           <Card>
             <Card.Header>
-              <Jumbotron className='jumbo' style={{ textAlign: 'center' }}>
+              <Jumbotron className='jumbo' >
 
 
                 <h1 style={{ fontWeight: 'bold' }}>Contact Me</h1>
@@ -84,13 +84,15 @@ export default function ContactForm() {
                 <Card >
                   <Card.Img variant="top" src={phoneImg} style={{ height: '222px' }} />
                   <Card.Body>
-                    <Card.Title>Phone And Email </Card.Title>
                     
-                      <ListGroup variant="flush">
-                        <ListGroup.Item>(512)662-5553</ListGroup.Item>
-                        <ListGroup.Item>eloso85@gmail.com</ListGroup.Item>
-
-                      </ListGroup>
+                    
+                      <ul className="contactList">
+                        <h3>Phone</h3>
+                        <li>(512)662-5553</li>
+                        
+                        <h3>Email</h3>
+                        <li>eloso85@gmail.com</li>
+                      </ul>
                     
                   </Card.Body>
                   </Card>
@@ -197,16 +199,13 @@ export default function ContactForm() {
           padding:2%;
     }
 
-   .phone{
-     
-     width:260px;
+   .contactList{
+    list-style-type: none;
+    padding:10px;
+    
    }
     
-   h1{
-    font-size: 100px;
-    
-   } 
-    
+  
     
     
     `}</style>

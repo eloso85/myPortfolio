@@ -19,7 +19,13 @@ export default function Navi(){
 </svg>
       </Nav.Link>
 
-     
+      <Nav.Link href="/projects">
+
+      <svg  width="2em" height="2em" viewBox="0 0 16 16" fill="#0056B3" xmlns="http://www.w3.org/2000/svg">
+  <path  d="M0 12.5A1.5 1.5 0 001.5 14h13a1.5 1.5 0 001.5-1.5V6.85L8.129 8.947a.5.5 0 01-.258 0L0 6.85v5.65z" />
+  <path  d="M0 4.5A1.5 1.5 0 011.5 3h13A1.5 1.5 0 0116 4.5v1.384l-7.614 2.03a1.5 1.5 0 01-.772 0L0 5.884V4.5zm5-2A1.5 1.5 0 016.5 1h3A1.5 1.5 0 0111 2.5V3h-1v-.5a.5.5 0 00-.5-.5h-3a.5.5 0 00-.5.5V3H5v-.5z" />
+</svg>
+      </Nav.Link>
 
 
       <Nav.Link href="/contact">
@@ -28,13 +34,7 @@ export default function Navi(){
   <path d="M.05 3.555L8 8.414l7.95-4.859A2 2 0 0014 2H2A2 2 0 00.05 3.555zM16 4.697l-5.875 3.59L16 11.743V4.697zm-.168 8.108L9.157 8.879 8 9.586l-1.157-.707-6.675 3.926A2 2 0 002 14h12a2 2 0 001.832-1.195zM0 11.743l5.875-3.456L0 4.697v7.046z"/>
 </svg>
       </Nav.Link>
-      <Nav.Link href="/projects">
-
-      <svg  width="2em" height="2em" viewBox="0 0 16 16" fill="#0056B3" xmlns="http://www.w3.org/2000/svg">
-  <path  d="M0 12.5A1.5 1.5 0 001.5 14h13a1.5 1.5 0 001.5-1.5V6.85L8.129 8.947a.5.5 0 01-.258 0L0 6.85v5.65z" />
-  <path  d="M0 4.5A1.5 1.5 0 011.5 3h13A1.5 1.5 0 0116 4.5v1.384l-7.614 2.03a1.5 1.5 0 01-.772 0L0 5.884V4.5zm5-2A1.5 1.5 0 016.5 1h3A1.5 1.5 0 0111 2.5V3h-1v-.5a.5.5 0 00-.5-.5h-3a.5.5 0 00-.5.5V3H5v-.5z" />
-</svg>
-      </Nav.Link>
+     
     </Nav>
 
 </Navbar>

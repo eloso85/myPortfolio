@@ -1,104 +1,17 @@
 const resumeData = {
+    "index":{
+      "intro":"Hello my name is Alejandro and Welcome to my porfolio page.",
+      "name":"alejandro",
+      "twitterUrl":"https://twitter.com/eloso85",
+      "githubUrl":"https://github.com/eloso85",
+      "linkedinUrl":"https://linkedin.com/in/alejandro-segura-764343155"
+    },
+    "main":{
+      "aboutMe":"My name is Alejandro Segura and I am a junior full-stack Web Application Developer, currently living in Austin, TX. I received a full-stack coding degree from the University of Texas at Austin. My professional experience for the last 20 years consisted in retail management and sales. I have recently started this new journey into web development and I’m loving it. I am very passionate about Web Development, and strive to better myself as a developer, and the development community. ",
+      "experince":"I have been studying web development since Oct of 2019. I’ve developed programs with HTML5, CSS, JavaScript, React, jQuery, and Next.js. I have also used MySQL, MongoDB, and FireBase as databases for my projects. For server side deployment I have experience with Node.js, Express, and Mern stack. Most of my projects have been group projects from school and personal projects I work from home. ",
+      "goals": "I’m a hardworking and self-motivated individual who is currently looking for a position as a Web Developer in a thriving, exciting, and growing company. Also looking for freelance jobs to help me push my career path forward. I continue to self-teach and seek out new information pertaining to my new career path because as Benjamin Franklin once said “ an investment in knowledge pays the best interest”."
+    }
     
-    "name": "Alejandro Segura",
-    "role": "Junior Web Developer",
-    "roleDescription": "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.",
-    "socialLinks":[
-        {
-          "name":"linkedin",
-          "url":"https://www.linkedin.com/in/rahul-bhatia-67ba08121/",
-          "className":"fa fa-linkedin"
-        },
-        {
-          "name":"github",
-          "url":"http://github.com/rbhatia46",
-          "className":"fa fa-github"
-        },
-        {
-          "name":"skype",
-          "url":"http://twitter.com/rbhatia46",
-          "className":"fa fa-twitter"
-        }
-      ],
-    "aboutme":"I am currently a pre-final year student at The LNM Institute of Information Technology and pursuing my B.Tech from here. I am a self taught Full Stack Web Developer, currently diving deeper into Machine Learning. I believe that to be successful in life, one needs to be obsessive with their dreams and keep working towards them.",
-    "address":"India",
-    "website":"https://rbhatia46.github.io",
-    "education":[
-      {
-        "UniversityName":"The LNM Insitute of Information Technology",
-        "specialization":"Some specialization",
-        "MonthOfPassing":"Aug",
-        "YearOfPassing":"2020",
-        "Achievements":"Some Achievements"
-      },
-      {
-        "UniversityName":"Some University",
-        "specialization":"Some specialization",
-        "MonthOfPassing":"Jan",
-        "YearOfPassing":"2018",
-        "Achievements":"Some Achievements"
-      }
-    ],
-    "work":[
-      {
-        "CompanyName":"Some Company",
-        "specialization":"Some specialization",
-        "MonthOfLeaving":"Jan",
-        "YearOfLeaving":"2018",
-        "Achievements":"Some Achievements"
-      },
-      {
-        "CompanyName":"Some Company",
-        "specialization":"Some specialization",
-        "MonthOfLeaving":"Jan",
-        "YearOfLeaving":"2018",
-        "Achievements":"Some Achievements"
-      }
-    ],
-    "skillsDescription":"Your skills here",
-    "skills":[
-      {
-        "skillname":"HTML5"
-      },
-      {
-        "skillname":"CSS"
-      },
-      {
-        "skillname":"Reactjs"
-      }
-    ],
-    "portfolio":[
-      {
-        "name":"project1",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/phone.jpg"
-      },
-      {
-        "name":"project2",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/project.jpg"
-      },
-      {
-        "name":"project3",
-        "description":"mobileapp",  
-        "imgurl":"images/portfolio/project2.png"
-      },
-      {
-        "name":"project4",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/phone.jpg"
-      }
-    ],
-    "testimonials":[
-      {
-        "description":"This is a sample testimonial",
-        "name":"Some technical guy"
-      },
-      {
-        "description":"This is a sample testimonial",
-        "name":"Some technical guy"
-      }
-    ]
   }
   
   export default resumeData
