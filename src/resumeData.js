@@ -21,12 +21,12 @@ const resumeData = {
       "img1":Socialape,
 
       "Name2":"Wat2Eat",
-      "description2":"",
+      "description2":"This App I created in school. It consists of 3 API's one to search for food, another one for drinks and the Google map Api to search for location. User enter the ingredients they would like to use and it provides the top 10 Recipes with those items from the food APU. The Drinks API only allows to search for one item using the free subscription. The Google Maps API lets the user finds the nearest groceries store from the current location. The Application is functional but is missing some additional features we were working on.",
       "url2":"https://eloso85.github.io/Wat2Eat/",
       "img2":rescipe,
 
       "Name3":"Chatcord",
-      "description3":"",
+      "description3":"This is a realtime chat app with websockets using Node.js, Express and Socket.io with Vanilla JS on the frontend with a custom UI. The user enters a chat by entering their name and selecting a chatroom. All Chat rooms are coding related. I used Heroku to deploy this app.",
       "url3":"https://desolate-eyrie-03344.herokuapp.com/",
       "img3":Chat
     }
