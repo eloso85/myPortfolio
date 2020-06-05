@@ -1,4 +1,4 @@
-import rescipe from '../src/images/recipe.jpg'
+
 import bulb from '../src/images/bulb.jpg'
 
 import Container from 'react-bootstrap/Container'
@@ -7,6 +7,8 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Image from 'react-bootstrap/Image'
+
+import ResumeData from '../src/resumeData'
 
 //hello
 export default function Projectsbox() {
@@ -20,35 +22,34 @@ export default function Projectsbox() {
                         <Card>
                             <Card.Header>
                                 <Jumbotron fluid className='jumbo' style={{ textAlign: 'center' }}>
-                                    
-                                    
-                                        <h1 style={{fontWeight:'bold'}}>Projects</h1>
-                                        <p>
-                                            This is a modified jumbotron that occupies the entire horizontal space of
-                                            its parent.
+
+
+                                    <h1 style={{ fontWeight: 'bold' }}>Projects</h1>
+                                    <p>
+                                        A list of project I have created
                                         </p>
-                                    
+
                                 </Jumbotron>
                             </Card.Header>
                             <Card.Body>
-                                <Card.Title>Wat2Eat</Card.Title>
+                                <Card.Title>{ResumeData.projects.Name1}</Card.Title>
 
                                 <Container>
                                     <Row>
-                                        <Col xs={9} >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan metus sit amet tincidunt auctor. Vestibulum in odio dui. Ut non ex arcu. In nec consectetur augue, ut euismod justo. Maecenas ornare lacus eget tortor placerat blandit. Vivamus condimentum, ex accumsan facilisis dignissim, quam metus dignissim odio, sed porttitor nibh ex ut orci. Nulla nisl nisi, sagittis nec augue non, vulputate lobortis purus.</Col>
-                                        <Col >
-                                            <Image style={{ width: '150px' }} src={rescipe} rounded />
+                                        <Col xs={9} >{ResumeData.projects.description1}</Col>
+                                        <Col > <a href={ResumeData.projects.url1} target="_blank">
+                                            <Image style={{ width: '150px' }} src={ResumeData.projects.img1} rounded />
+                                        </a>
                                         </Col>
 
                                     </Row>
-
+                                    <h3>{ResumeData.projects.Name2}</h3>
                                     <Row>
-
-
-
-
+                                        
                                         <Col md="auto" >
-                                            <Image style={{ width: '150px' }} src={rescipe} rounded />
+                                            <a href ={ResumeData.projects.url2} target="_blank">
+                                            <Image style={{ width: '150px' }} src={ResumeData.projects.img2} rounded />
+                                            </a>
                                         </Col>
                                         <Col>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan metus sit amet tincidunt auctor. Vestibulum in odio dui. Ut non ex arcu. In nec consectetur augue, ut euismod justo. Maecenas ornare lacus eget tortor placerat blandit. Vivamus condimentum, ex accumsan facilisis dignissim, quam metus dignissim odio, sed porttitor nibh ex ut orci. Nulla nisl nisi, sagittis nec augue non, vulputate lobortis purus.</Col>
 
@@ -58,7 +59,9 @@ export default function Projectsbox() {
                                     <Row>
                                         <Col xs={9} >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan metus sit amet tincidunt auctor. Vestibulum in odio dui. Ut non ex arcu. In nec consectetur augue, ut euismod justo. Maecenas ornare lacus eget tortor placerat blandit. Vivamus condimentum, ex accumsan facilisis dignissim, quam metus dignissim odio, sed porttitor nibh ex ut orci. Nulla nisl nisi, sagittis nec augue non, vulputate lobortis purus.</Col>
                                         <Col >
-                                            <Image style={{ width: '150px' }} src={rescipe} rounded />
+                                            <a href ={ResumeData.projects.url3} target="_blank">
+                                            <Image style={{ width: '150px' }} src={ResumeData.projects.img3} rounded />
+                                            </a>
                                         </Col>
 
                                     </Row>
