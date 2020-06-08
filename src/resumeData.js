@@ -7,7 +7,8 @@ const resumeData = {
       "name":"alejandro",
       "twitterUrl":"https://twitter.com/eloso85",
       "githubUrl":"https://github.com/eloso85",
-      "linkedinUrl":"https://linkedin.com/in/alejandro-segura-764343155"
+      "linkedinUrl":"https://linkedin.com/in/alejandro-segura-764343155",
+      "instagramUrl":"https://www.instagram.com/Techvato85/"
     },
     "main":{
       "aboutMe":"My name is Alejandro Segura and I am a junior full-stack Web Application Developer, currently living in Austin, TX. I received a full-stack coding degree from the University of Texas at Austin. My professional experience for the last 20 years consisted in retail management and sales. I have recently started this new journey into web development and I’m loving it. I am very passionate about Web Development, and strive to better myself as a developer, and the development community. ",

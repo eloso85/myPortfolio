@@ -20,8 +20,7 @@ export default function Home() {
      
       <h1>{ResumeData.index.intro}</h1>
         <p>
-          This is a simple hero unit, a simple jumbotron-style component for calling
-          extra attention to featured content or information.
+         
   </p>
         <p>
           <Link href='/main'><Button variant="primary">Enter</Button></Link>
