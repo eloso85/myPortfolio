@@ -1,11 +1,16 @@
 import Navi from "../components/Navi";
 import Projectsbox from "../components/Projectsbox";
 
+import Head from 'next/head'
+
 import backImg from '../src/images/austin.jpg'
 
 export default function Projects(){
     return (<>
         <div>
+            <Head>
+                <title>Projects Page</title>
+            </Head>
             <Navi />
             <Projectsbox />
         </div>

@@ -1,4 +1,4 @@
-
+import Head from 'next/head'
 
 import Navi from '../components/Navi'
 //bootstrap
@@ -20,6 +20,10 @@ import ResumeData from '../src/resumeData'
 export default function Main() {
 
   return (<>
+
+  <Head>
+    <title>About me</title>
+  </Head>
 
     <Navi />
     
