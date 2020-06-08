@@ -111,7 +111,7 @@ export default function Projectsbox() {
     }
     
     .jumbo{
-        color:white;
+        color:#0056B3;
         background-image:url(${bulb});
         background-size:cover;
         background-position:center;

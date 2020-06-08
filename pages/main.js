@@ -7,10 +7,12 @@ import Card from 'react-bootstrap/Card'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Jumbotron from 'react-bootstrap/Jumbotron'
 //images
 import backImg from '../src/images/austin.jpg'
 import me from '../src/images/insta_me.jpg'
 import whiteLap from '../src/images/laptopwhite.jpeg'
+import skytunnel from '../src/images/skytunnel.jpeg'
 
 import ResumeData from '../src/resumeData'
 
@@ -22,9 +24,10 @@ export default function Main() {
     <Navi />
     
     <Container  >
+      <Jumbotron className="jumbo"><h1>About Me</h1></Jumbotron>
   <Row >
  
-    <Col xs={12} md={8}><h1 >About Me</h1>
+    <Col xs={12} md={8}>
 
     
     <p>{ResumeData.main.aboutMe}</p>
@@ -116,6 +119,15 @@ export default function Main() {
           background-size: cover;
           background-position: center;
           
+        }
+
+        .jumbo{
+          background-image:url(${skytunnel});
+          background-size:cover;
+          background-position:center;
+          height:300px;
+          text-align:center;
+          color:#0056B3;
         }
       
 

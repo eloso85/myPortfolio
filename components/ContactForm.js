@@ -176,7 +176,7 @@ export default function ContactForm() {
               </CardDeck>
             </Card.Body>
             <Card.Footer>
-              <small className="text-muted">Last updated 3 mins ago</small>
+              <small className="text-muted">Created with Next.js</small>
             </Card.Footer>
           </Card>
         </Col>
@@ -185,10 +185,12 @@ export default function ContactForm() {
     <style jsx global>{`
     
     .jumbo{
+        text-align:center;
+        color:#0056B3;
         background-image:url(${email1});
         background-size:cover;
         background-position:center;
-        height:250px;
+        height:300px;
         
         
     }
