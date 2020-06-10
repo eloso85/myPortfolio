@@ -3,7 +3,7 @@ import rescipe from '../src/images/recipe.jpg'
 import Chat from '../src/images/chatcord.png'
 const resumeData = {
     "index":{
-      "intro":"Hello my name is Alejandro and Welcome to my porfolio page.",
+      "intro":"Hello my name is Alejandro and Welcome to my portfolio page.",
       "name":"alejandro",
       "twitterUrl":"https://twitter.com/eloso85",
       "githubUrl":"https://github.com/eloso85",
