@@ -90,10 +90,10 @@ export default function ContactForm() {
                     
                       <ul className="contactList">
                         <h3>Phone</h3>
-                        <li>(512)662-5553</li>
+                        <li><a href ="tel:5126625553">512-662-5553</a></li>
                         
                         <h3>Email</h3>
-                        <li>eloso85@gmail.com</li>
+                        <li><a href ="mailto:eloso85@gmail.com">eloso85@gmail.com</a></li>
                       </ul>
                     
                   </Card.Body>
@@ -144,7 +144,7 @@ export default function ContactForm() {
                 <Card >
 
                   <Card.Body>
-                    <Card.Title>Card title</Card.Title>
+                    <Card.Title>Message Me</Card.Title>
                     <Form onSubmit={handleSubmit}>
                       <Form.Group controlId="exampleForm.ControlInput1">
                         <Form.Label>Name</Form.Label>
