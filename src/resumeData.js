@@ -1,6 +1,7 @@
 import Socialape from './images/socialape.png'
 import rescipe from '../src/images/recipe.jpg'
 import Chat from '../src/images/chatcord.png'
+import Ecom from '../src/images/e-com.png'
 const resumeData = {
     "index":{
       "intro":"Hello my name is Alejandro and Welcome to my portfolio page.",
@@ -29,7 +30,12 @@ const resumeData = {
       "Name3":"Chatcord",
       "description3":"This is a realtime chat app with websockets using Node.js, Express and Socket.io with Vanilla JS on the frontend with a custom UI. The user enters a chat by entering their name and selecting a chatroom. All Chat rooms are coding related. I used Heroku to deploy this app.",
       "url3":"https://desolate-eyrie-03344.herokuapp.com/",
-      "img3":Chat
+      "img3":Chat,
+
+      "Name4":"E-Com Site",
+      "description4":"I created this website using React, Commerce.js, Material-UI, and Stripe. On the home page the first thing you will notice is the navbar with the logo and a  working shopping cart. As you add and remove product from the cart it will display item count. The product on the page is being displayed via the api. I can add and modify product via the Commerce.js api and it will render on my website.  To mangae my payment i used the Stripe Api. Currently the payment method is only set up on test so if you wanna test it just type 424242424242424242 for card number 4242 for date.  Once you place the order you will be sent a test email via Commerce.js to confirm order.",
+      "url4":"https://mystorecommercejs.netlify.app/",
+      "img4":Ecom,
     }
     
   }
