@@ -17,7 +17,7 @@ const resumeData = {
     },
     "projects":{
       "Name1":"SocialApe Tweet",
-      "description1":"I learned to make this app from freeCodeCamp.com. This was a full-stack, fully featured social media application using React, Firebase, Redux, Express, and Material-UI. I created a backend REST API server with Node.js and Express, user login and authentication, image uploads, notifications, cloud functions, deploying to Firebase.",
+      "description1":"I created this fully functional-featured social media application using React, Firebase, Redux, Express, and Material-UI. This app features user login and authentication, image upload, and notifications.",
       "url1":"https://socialape-765b5.web.app/",
       "img1":Socialape,
 
