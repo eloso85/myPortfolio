@@ -15,7 +15,7 @@ import email1 from '../src/images/email.jpg'
 import socialImg from '../src/images/social.jpg'
 import phoneImg from '../src/images/phone.jpg'
 
-import firebase from '../src/firebase'
+
 
 import ResumeData from '../src/resumeData'
 
@@ -27,40 +27,11 @@ export default function ContactForm() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
-  const [disabled, setDisabled] = useState(false)
-  const [emailSent, setEmailSent] = useState(null)
 
-  //hello/yuo/hello
+
 
   function handleSubmit(evt) {
     evt.preventDefault();
-
-    firebase
-      .firestore()
-      .collection('contacts')
-      .add({
-        name,
-        email,
-        message,
-        sent: new Date()
-      })
-      .then(() => {
-        setName('')
-        setEmail('')
-        setMessage('')
-      })
-
-
-
-    setDisabled({
-      disabled: true
-    });
-
-    setEmailSent({
-      emailSent: false,
-
-
-    })
 
   }
 
@@ -160,12 +131,11 @@ export default function ContactForm() {
                         <Form.Label>Message</Form.Label>
                         <Form.Control as="textarea" rows="7" value={message} onChange={e => setMessage(e.target.value)} />
                       </Form.Group>
-                      <Button variant="primary" type="submit" disabled={disabled}>
-                        Send
+                      <Button variant="primary" type="submit" disabled>
+                        Contact Form coming soon
                             </Button>
 
-                      {/* {emailSent === true && <p className="success-msg">Email Sent</p>}
-                            {emailSent === false && <p className="err-msg">Email Not Sent</p>} */}
+                     
 
                     </Form>
                   </Card.Body>

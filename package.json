@@ -3,21 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
     "start": "next start"
   },
   "dependencies": {
-    "@sendgrid/mail": "^7.1.1",
-    "bootstrap": "^4.4.1",
-    "bootstrap-icons": "^1.0.0-alpha3",
-    "dotenv": "^8.2.0",
-    "firebase": "^7.14.5",
-    "next": "9.3.6",
-    "next-images": "^1.4.0",
-    "react": "16.13.1",
-    "react-bootstrap": "^1.0.1",
-    "react-dom": "16.13.1",
-    "websocket-extensions": "^0.1.4"
+    "bootstrap": "^5.3.0",
+    "next": "^16.0.0",
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.0",
+    "react-dom": "^19.0.0"
   }
 }
