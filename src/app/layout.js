@@ -1,3 +1,5 @@
+import "../styles/global.css"
+
 export const metadata = {
     title: 'Alejandro Segura | Portfolio',
     description: 'Alejandro Segura\'s developer portfolio'

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import Navi from '../components/Navi'
+import Navi from '../../components/Navi';
 //bootstrap
 
 //images
@@ -9,7 +9,7 @@ import backImg from '../src/images/austin.jpg'
 
 
 
-import About from '../components/About'
+import About from '../../components/About'
 
 
 export default function Main() {

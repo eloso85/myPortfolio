@@ -1,25 +1,37 @@
-
-    
-body {
-
-  
- 
-  padding: 0;
-  margin: 0;
-  font-family: "sans-serif";
-  line-height: 1.6;
-  font-size: 18px;
-  
+:root {
+  --color-background: #111827;
+  --color-text: #f3f4f6;
+  --color-accent: #93c5fd;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
+a {
+  color: var(--color-accent);
+}
 
-
-
-
-
-
-
-  
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
