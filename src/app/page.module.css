@@ -1,0 +1,22 @@
+.hero {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+.content {
+  width: 100%;
+  max-width: 48rem;
+}
+
+.title {
+  margin: 0 0 1rem;
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  line-height: 1.1;
+}
+
+.description {
+  margin: 0;
+  font-size: 1.25rem;
+}
