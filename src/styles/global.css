@@ -1,7 +1,22 @@
 :root {
-  --color-background: #111827;
-  --color-text: #f3f4f6;
-  --color-accent: #93c5fd;
+  --paper: #f4f1ea;
+  --paper-2: #ebe6db;
+  --ink: #1f1d1a;
+  --ink-2: #4a4640;
+  --muted: #5a554d;
+  --rule: #cfc8ba;
+
+  --brass: #7d6230;
+  --brass-light: #c9a96a;
+
+  --charcoal: #1c1b19;
+  --on-dark: #ede8de;
+  --on-dark-muted: #a8a196;
+  --rule-dark: #3a3732;
+
+  --serif: var(--font-newsreader, Georgia), serif;
+  --mono: var(--font-plex-mono, ui-monospace), monospace;
+  --pad: clamp(1.25rem, 5vw, 4rem);
 }
 
 *,
@@ -12,9 +27,9 @@
 
 body {
   margin: 0;
-  background-color: var(--color-background);
-  color: var(--color-text);
-  font-family: system-ui, sans-serif;
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
   font-size: 1rem;
   line-height: 1.6;
 }
@@ -26,7 +41,22 @@ img {
 }
 
 a {
-  color: var(--color-accent);
+  color: var(--brass);
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 4px;
+}
+
+::selection {
+  background-color: #e6dcc4;
+  color: var(--ink);
 }
 
 button,
