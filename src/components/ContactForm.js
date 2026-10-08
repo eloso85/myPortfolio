@@ -17,7 +17,7 @@ import phoneImg from '../src/images/phone.jpg'
 
 
 
-import ResumeData from '../src/resumeData'
+import ResumeData from '../resumeData'
 
 
 

@@ -1,0 +1,154 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem var(--pad);
+  border-bottom: 1px solid var(--ink);
+}
+
+.brand {
+  color: var(--ink);
+  font-size: 1.3125rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+}
+
+.navigation {
+  display: none;
+}
+
+.menuButton,
+.closeButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border: 1px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 22px;
+}
+
+.hamburger span {
+  height: 2px;
+  background-color: currentColor;
+}
+
+.drawer {
+  position: fixed;
+  inset: 0 0 0 auto;
+  width: min(24rem, 100%);
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-left: 1px solid var(--rule);
+  background-color: var(--paper);
+  color: var(--ink);
+  overflow-y: auto;
+}
+
+.drawer::backdrop {
+  background-color: rgb(0 0 0 / 45%);
+}
+
+.drawer[open] {
+  animation: slide-in 220ms ease-out;
+}
+
+.drawerContent {
+  min-height: 100%;
+  padding: 1.5rem;
+}
+
+.drawerHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.drawerHeading h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.closeButton {
+  font-size: 2rem;
+}
+
+.drawerNavigation {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.drawerNavigation a {
+  padding-block: 1.25rem;
+  border-bottom: 1px solid var(--rule);
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.navigation a:hover,
+.drawerNavigation a:hover {
+  color: var(--brass);
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 64rem) {
+  .header {
+    padding-block: 1.75rem;
+  }
+
+  .menuButton {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    gap: 2rem;
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .navigation a {
+    padding-block: 0.5rem;
+    color: var(--ink);
+    text-decoration: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .drawer[open] {
+    animation: none;
+  }
+}

@@ -1,4 +1,5 @@
-import { Newsreader, IBM_Plex_Mono } from 'next/font/google'
+import { Newsreader, IBM_Plex_Mono } from 'next/font/google';
+import SiteHeader from '../components/SiteHeader';
 import '../styles/global.css'
 
 const newsreader = Newsreader({
@@ -26,7 +27,11 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${newsreader.variable} ${plexMono.variable}`}
     >
-      <body>{children}</body>
+      
+      <body>
+        <SiteHeader />
+        {children}
+      </body>
     </html>
   )
 }
