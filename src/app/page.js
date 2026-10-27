@@ -1,6 +1,7 @@
 import Image from "next/image";
 import portrait from "../images/insta_me.jpg";
 import styles from "./page.module.css";
+import {projects} from "../data/projects"
 export default function HomePage() {
   return (
     <main>
@@ -42,7 +43,25 @@ export default function HomePage() {
         className={styles.work}
       >
         <h2 id="work-title">Selected work</h2>
-        <p>Project case studies are being updated</p>
+        <ol className={styles.projectList}>
+          {projects.map((project, index)=>(
+            <li key={project.id} className={styles.projectRow}>
+              <span className={styles.projectNumber} aria-hidden="true">
+                {String(index + 1).padStart(2, '0')}
+              </span>
+              <div className={styles.projectSummary}>
+                <h3 className={styles.projectName}>{project.name}</h3>
+                <p className={styles.projectDescription}>
+                  {project.description}
+                </p>
+              </div>
+              <p className={styles.projectTech}>
+                <span className={styles.techLabel}>Built with: </span>
+                {project.tech.join(' · ')}
+              </p>
+            </li>
+          ))}
+        </ol>
 
       </section>
     </main>

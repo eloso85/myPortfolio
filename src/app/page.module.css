@@ -90,6 +90,76 @@
   font-weight: 400;
 }
 
+.projectList {
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.projectRow {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  gap: 0.75rem 1rem;
+  padding-block: 1.75rem;
+  border-top: 1px solid var(--rule);
+}
+
+.projectRow:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+
+.projectNumber {
+  padding-top: 0.5rem;
+  color: var(--brass);
+  font-family: var(--mono);
+  font-size: 0.8125rem;
+}
+
+.projectSummary {
+  min-width: 0;
+}
+
+.projectName {
+  margin: 0;
+  font-size: clamp(1.5rem, 3vw, 1.875rem);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.projectDescription {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 1.0625rem;
+  font-style: italic;
+}
+
+.projectTech {
+  grid-column: 2;
+  margin: 0;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.techLabel {
+  color: var(--ink);
+}
+
+@media (min-width: 64rem) {
+  .projectRow {
+    grid-template-columns: 2rem minmax(0, 1fr) minmax(0, 18rem);
+    column-gap: 1.5rem;
+    align-items: baseline;
+  }
+
+  .projectTech {
+    grid-column: 3;
+    text-align: right;
+  }
+}
+
 @media (min-width: 64rem) {
   .hero {
     grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
