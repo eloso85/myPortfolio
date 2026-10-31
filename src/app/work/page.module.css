@@ -1,0 +1,89 @@
+.page {
+  padding-inline: var(--pad);
+  padding-bottom: 4rem;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-block: clamp(3rem, 8vw, 6rem);
+  border-bottom: 3px double var(--ink);
+}
+
+.kicker {
+  margin: 0;
+  color: var(--brass);
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.heading h1 {
+  margin: 0;
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.introduction {
+  max-width: 36rem;
+  margin: 0;
+  color: var(--ink-2);
+  font-size: 1.25rem;
+}
+
+.projectList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project {
+  display: grid;
+  gap: 2rem;
+  padding-block: 2.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.screenshot {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  background-color: var(--paper-2);
+}
+
+.image {
+  object-fit: contain;
+}
+
+.details {
+  min-width: 0;
+}
+
+.details h2 {
+  margin: 0;
+  font-size: clamp(2rem, 3.4vw, 2.75rem);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.description {
+  color: var(--ink-2);
+  font-size: 1.1875rem;
+}
+
+.technologies {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: 64rem) {
+  .project {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+  }
+}
